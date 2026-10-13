@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f7f5f0">
+  <meta name="description" content="ListaYA: catálogos web personalizados para mostrar tus productos, actualizar precios y preparar pedidos por WhatsApp. Diseño, publicación y acompañamiento para tu negocio.">
+  <title>ListaYA — Tu negocio, en un solo link</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+<svg class="icons" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
+ <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+ <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 7h14l1 14H4L5 7Z"/><path d="M8 8V6a4 4 0 0 1 8 0v2"/></symbol>
+ <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+ <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 11a9 9 0 0 1-9 9 10 10 0 0 1-4-.8L3 21l1.8-5A9 9 0 1 1 21 11Z"/><path d="M8 10h8M8 14h5"/></symbol>
+ <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 7h16M4 17h16M9 4v6M15 14v6"/></symbol>
+ <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></symbol>
+ <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></symbol>
+ <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+ <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M20 3C6 2 1 10 6 16c6 5 14 0 14-13Z"/><path d="m3 21 12-12"/></symbol>
+ <symbol id="i-shirt" viewBox="0 0 24 24"><path d="m8 3-6 4 3 5 3-2v11h8V10l3 2 3-5-6-4a4 4 0 0 1-8 0Z"/></symbol>
+ <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 3 2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5L12 3Z"/></symbol>
+<symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></symbol>
+</defs></svg>
+<a class="skip" href="#principal">Saltar al contenido</a>
+<header class="header">
+ <div class="container nav-wrap">
+  <a class="brand brand-logo" href="#inicio" aria-label="ListaYA, inicio"><img src="assets/listaya-logo.png" alt="ListaYA" width="1774" height="887"></a>
+  <nav id="navigation" aria-label="Navegación principal"><a href="#como-funciona">Cómo funciona</a><a href="#ejemplos">Ejemplos</a><a href="#planes">Planes</a><a href="#preguntas">Preguntas</a></nav>
+  <a class="button small nav-cta" href="#contacto">Hablemos <svg><use href="#i-arrow"/></svg></a>
+  <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navigation"><span></span><span></span></button>
+ </div>
+</header>
+<main id="principal">
+ <section class="hero container" id="inicio">
+  <div class="hero-copy">
+   <span class="eyebrow"><span class="tiny-dot"></span> TU NEGOCIO, EN UN SOLO LINK</span>
+   <h1>Mucho para mostrar.<br><span>Más fácil<br> para vender.</span></h1>
+   <p class="hero-description">Creamos tu catálogo web para que tus clientes vean lo que ofrecés, armen su pedido y te escriban por WhatsApp. Con tu marca y a tu manera.</p>
+   <div class="hero-actions"><a class="button" href="#contacto">Quiero mi catálogo <svg><use href="#i-arrow"/></svg></a><button class="button secondary" data-demo="indumentaria">Ver cómo se ve <svg><use href="#i-globe"/></svg></button></div>
+   <div class="hero-checks"><span><svg><use href="#i-check"/></svg>Diseño para tu negocio</span><span><svg><use href="#i-check"/></svg>Pedidos por WhatsApp</span></div>
+  </div>
+  <div class="hero-visual">
+   <div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div>
+   <div class="floating-note top-note"><span class="note-icon"><svg><use href="#i-spark"/></svg></span><div>Tu marca, tu estilo.<small>Un catálogo que se siente tuyo.</small></div></div>
+   <div class="browser-preview">
+    <div class="browser-top"><span class="browser-dots"><i></i><i></i><i></i></span><span>Tu catálogo online</span><svg><use href="#i-globe"/></svg></div>
+    <div class="sample-nav"><span class="sample-logo">alma<span>estudio</span></span><span>colección de todos los días</span><svg><use href="#i-bag"/></svg></div>
+    <div class="sample-banner"><span>HECHO PARA ACOMPAÑARTE</span><strong>Lo simple<br>se vuelve especial.</strong><span class="banner-flower" aria-hidden="true">✳</span></div>
+    <div class="sample-tabs"><b>Todos</b><span>Prendas</span><span>Accesorios</span></div>
+    <div class="sample-products">
+     <div><img src="assets/remera.jpg" alt="Remera blanca del catálogo de ejemplo" width="600" height="600"><span>Remera esencial</span><b>$18.000</b></div>
+     <div><img src="assets/buzo.jpg" alt="Buzo del catálogo de ejemplo" width="600" height="600"><span>Buzo de todos los días</span><b>$34.000</b></div>
+     <div><img src="assets/bolso.jpg" alt="Mochila del catálogo de ejemplo" width="600" height="600"><span>Mochila urbana</span><b>$26.000</b></div>
+    </div>
+    <button class="sample-cart" data-demo="indumentaria">Explorá este ejemplo <svg><use href="#i-arrow"/></svg></button>
+   </div>
+   <div class="floating-note bottom-note"><span class="note-icon green"><svg><use href="#i-chat"/></svg></span><div>Un pedido más ordenado.<small>Directo a tu WhatsApp.</small></div><span class="notification-dot"></span></div>
+   <p class="visual-caption">Ejemplo ilustrativo · productos y precios de muestra</p>
+  </div>
+ </section>
+ <div class="promise-strip"><div class="container"><span>Tu catálogo trabaja.<br><b>Vos seguís haciendo lo tuyo.</b></span><span><svg><use href="#i-globe"/></svg>Un link para compartir</span><span><svg><use href="#i-sliders"/></svg>Precios actualizables</span><span><svg><use href="#i-chat"/></svg>Contacto directo</span></div></div>
+ <section class="section container" id="como-funciona">
+  <div class="section-heading"><div><span class="eyebrow">SIMPLE DESDE EL PRIMER DÍA</span><h2>De tus productos<br>a tu próxima consulta.</h2></div><p>Te acompañamos con el armado y la publicación. Después, mantenés tu catálogo al día desde una planilla fácil de usar.</p></div>
+  <div class="steps">
+   <article><span class="step-number">01 <span>—</span></span><h3>Nos contás de tu negocio</h3><p>Qué vendés, cómo lo vendés y qué necesita saber tu cliente. Reunimos tu logo, fotos y lista de productos.</p></article>
+   <article><span class="step-number">02 <span>—</span></span><h3>Le damos forma a tu catálogo</h3><p>Adaptamos el diseño a tu marca, ordenamos las categorías y conectamos los pedidos con tu WhatsApp.</p></article>
+   <article><span class="step-number">03 <span>—</span></span><h3>Compartís y empezás</h3><p>Publicamos, probamos y te explicamos cómo actualizarlo. Tu enlace queda listo para la bio, tus redes y tus mensajes.</p></article>
+  </div>
+ </section>
+ <section class="examples-section" id="ejemplos"><div class="container section">
+  <div class="section-heading"><div><span class="eyebrow">IMAGINÁ EL TUYO</span><h2>Distintos negocios.<br>La misma facilidad.</h2></div><p>Tu catálogo se adapta a lo que vendés. Explorá estos ejemplos y probá cómo se arma un pedido.</p></div>
+  <div class="example-grid">
+   <article class="example-card"><button class="example-preview clothing" data-demo="indumentaria" aria-label="Explorar ejemplo de indumentaria"><div class="mini-site"><div class="mini-header">alma<span>estudio</span><svg><use href="#i-bag"/></svg></div><div class="mini-title">Básicos que van con vos.</div><div class="mini-images"><img src="assets/remera.jpg" alt="Remera blanca" loading="lazy"><img src="assets/buzo.jpg" alt="Buzo" loading="lazy"></div></div><span class="preview-arrow"><svg><use href="#i-arrow"/></svg></span></button><div class="example-text"><span>INDUMENTARIA Y ACCESORIOS</span><h3>Tu colección, bien presentada.</h3><p>Fotos, categorías y precios para elegir con calma.</p><button class="text-button" data-demo="indumentaria">Explorar ejemplo <svg><use href="#i-arrow"/></svg></button></div></article>
+   <article class="example-card"><button class="example-preview food" data-demo="alimentos" aria-label="Explorar ejemplo de dietética"><div class="mini-site"><div class="mini-header food-logo">raíz<span>almacén natural</span><svg><use href="#i-leaf"/></svg></div><div class="mini-title">Bueno para todos los días.</div><div class="mini-images"><img src="assets/granola.jpg" alt="Avena y cereales" loading="lazy"><img src="assets/cafe.jpg" alt="Granos de café" loading="lazy"></div></div><span class="preview-arrow"><svg><use href="#i-arrow"/></svg></span></button><div class="example-text"><span>DIETÉTICAS Y ALMACENES</span><h3>Todo lo rico, en un lugar.</h3><p>Productos por unidad, pack o kilo, según tu negocio.</p><button class="text-button" data-demo="alimentos">Explorar ejemplo <svg><use href="#i-arrow"/></svg></button></div></article>
+   <article class="example-card"><button class="example-preview wholesale" data-demo="mayorista" aria-label="Explorar ejemplo de distribuidora"><div class="mini-site"><div class="mini-header wholesale-logo">NORTE<span>distribuidora</span><svg><use href="#i-globe"/></svg></div><div class="mini-title">Tu próximo pedido,<br>más simple.</div><div class="mini-list"><span>Café en grano <b>Pack × 6</b></span><span>Avena tradicional <b>Bolsa × 1 kg</b></span><span>Pan artesanal <b>Caja × 12</b></span></div></div><span class="preview-arrow"><svg><use href="#i-arrow"/></svg></span></button><div class="example-text"><span>DISTRIBUIDORAS Y MAYORISTAS</span><h3>Un pedido con todos los detalles.</h3><p>Presentaciones y cantidades claras para tus clientes.</p><button class="text-button" data-demo="mayorista">Explorar ejemplo <svg><use href="#i-arrow"/></svg></button></div></article>
+  </div><p class="example-footnote">Marcas ficticias y datos de muestra. Podemos adaptar el catálogo a otros rubros y formas de venta.</p>
+ </div></section>
+ <section class="section container benefits"><div class="benefits-heading"><span class="eyebrow">PENSADO PARA TU DÍA A DÍA</span><h2>Menos fotos sueltas.<br>Más claridad para elegir.</h2><p>Un lugar donde tus clientes encuentran tus productos y vos mantenés la información organizada.</p><a class="text-button" href="#contacto">Contanos qué necesitás <svg><use href="#i-arrow"/></svg></a></div><div class="benefits-grid">
+  <article><span class="feature-icon peach"><svg><use href="#i-bag"/></svg></span><h3>Tu identidad, presente</h3><p>Logo, colores y una presentación pensada para tu negocio.</p></article>
+  <article><span class="feature-icon lilac"><svg><use href="#i-sliders"/></svg></span><h3>Información al día</h3><p>Editás precios, fotos y disponibilidad desde tu planilla.</p></article>
+  <article><span class="feature-icon mint"><svg><use href="#i-chat"/></svg></span><h3>Pedidos más claros</h3><p>El cliente revisa su selección y prepara el mensaje para WhatsApp.</p></article>
+  <article><span class="feature-icon sand"><svg><use href="#i-globe"/></svg></span><h3>Bien desde el celular</h3><p>Búsqueda, categorías y carrito para recorrer tu catálogo con comodidad.</p></article>
+ </div></section>
+ <section class="plans-section" id="planes"><div class="container section">
+  <div class="center-heading"><span class="eyebrow">UN SERVICIO QUE TE ACOMPAÑA</span><h2>Tu catálogo empieza acá.<br>Y sigue con vos.</h2><p>Tres abonos mensuales para empezar, crecer o delegar la gestión de tu catálogo.</p></div>
+  <div class="plans-grid">
+   <article class="plan"><span class="plan-type">PARA EMPEZAR SIMPLE</span><h3>Esencial</h3><p class="plan-intro">Tu primer catálogo web, listo para compartir. Una opción simple y accesible que administrás vos.</p><div class="plan-price">USD 20 <span>abono mensual</span></div><ul><li>Hasta 50 productos</li><li>Diseño adaptado a tu marca</li><li>Productos y precios desde tu planilla</li><li>Pedidos directos por WhatsApp</li><li>Publicación y mantenimiento técnico</li><li>Guía de uso y soporte</li></ul><a class="button secondary" href="#contacto" data-plan="Esencial — USD 20/mes">Quiero empezar <svg><use href="#i-arrow"/></svg></a></article>
+   <article class="plan featured"><span class="plan-type">PARA DAR EL SIGUIENTE PASO</span><h3>Profesional</h3><p class="plan-intro">Más espacio para tus productos y una presencia web con tu propio dominio, preparada para buscadores.</p><div class="plan-price">USD 50 <span>abono mensual</span></div><ul><li>Hasta 150 productos</li><li>Todo lo del plan Esencial</li><li>Dominio web incluido (ver disponibilidad)</li><li>SEO inicial: títulos, descripciones y estructura</li><li>Actualización desde tu planilla</li><li>Ajustes de diseño y soporte</li></ul><a class="button" href="#contacto" data-plan="Profesional — USD 50/mes">Me interesa este plan <svg><use href="#i-arrow"/></svg></a></article>
+   <article class="plan"><span class="plan-type">PARA DELEGAR LA GESTIÓN</span><h3>Gestión Integral</h3><p class="plan-intro">Nos ocupamos de tu catálogo y de la presentación de tus productos, con un servicio personalizado para tu negocio.</p><div class="plan-price">USD 100 <span>abono mensual</span></div><ul><li>Cantidad de productos a definir por cliente</li><li>Administración de productos, precios y categorías</li><li>Creación y mejora de imágenes de productos con IA</li><li>Asesoramiento para tus redes sociales</li><li>Diseño personalizado según tu negocio</li><li>Dominio web y SEO inicial incluidos</li><li>Plan mensual de trabajo acordado</li></ul><a class="button secondary" href="#contacto" data-plan="Gestión Integral — USD 100/mes">Quiero delegar mi catálogo <svg><use href="#i-arrow"/></svg></a></article>
+  </div><p class="plan-footnote">Valores mensuales en USD. Profesional y Gestión Integral incluyen un dominio estándar sujeto a disponibilidad; los dominios premium se cotizan aparte. En Gestión Integral acordamos la cantidad de productos, actualizaciones e imágenes por mes antes de comenzar.</p>
+ </div></section>
+ <section class="section container faq-section" id="preguntas"><div><span class="eyebrow">LO QUE QUIZÁS TE ESTÁS PREGUNTANDO</span><h2>Todo un poco<br>más claro.</h2><p>El catálogo organiza la elección.<br>Vos seguís conversando con tu cliente.</p></div><div class="faqs">
+  <details open><summary>¿Necesito saber de tecnología?<span>+</span></summary><p>Te entregamos el catálogo publicado y te mostramos cómo usar la planilla para cambiar productos, fotos, precios y disponibilidad.</p></details>
+  <details><summary>¿Cómo llegan los pedidos?<span>+</span></summary><p>El comprador agrega productos, revisa las cantidades y el total estimado, y abre WhatsApp con el mensaje preparado. Después toca enviar y coordinan la venta entre ustedes.</p></details>
+  <details><summary>¿El catálogo cobra o descuenta stock?<span>+</span></summary><p>La propuesta base prepara pedidos para WhatsApp. Los pagos, la confirmación de la venta y el control de existencias los gestionás vos. Si necesitás otras funciones, las evaluamos y cotizamos aparte.</p></details>
+  <details><summary>¿Sirve para mi rubro?<span>+</span></summary><p>Podemos adaptar categorías, información de productos y unidades de venta a tu negocio. Nos contás cómo trabajás y definimos qué necesita tu catálogo.</p></details>
+  <details><summary>¿Qué tengo que tener para empezar?<span>+</span></summary><p>Una lista de productos con precios, fotos que podamos usar, tu identidad de marca y el número de WhatsApp que recibirá los pedidos. Revisamos juntos qué falta y cómo organizarlo.</p></details>
+  <details><summary>¿Puedo usar un dominio propio?<span>+</span></summary><p>Sí. Profesional y Gestión Integral incluyen un dominio estándar, sujeto a disponibilidad. En Esencial podés solicitarlo como adicional. Los dominios premium se cotizan aparte.</p></details>
+ </div></section>
+ <section class="contact-section" id="contacto"><div class="container contact-grid"><div><span class="eyebrow">HAGAMOS LUGAR PARA TU NEGOCIO</span><h2>Tu próxima vidriera<br>puede ser un link.</h2><p>Contanos qué vendés y cómo te gustaría mostrarlo. Prepará tu consulta y demos el primer paso.</p><span class="contact-signature"><svg><use href="#i-bag"/></svg>Hecho para tu negocio.<br>Con el cuidado de ListaYA.</span><div class="contact-socials"><a class="contact-instagram" href="https://www.instagram.com/listayaok/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de ListaYA: @listayaok (abre en una pestaña nueva)"><svg aria-hidden="true"><use href="#i-instagram"/></svg><span>@listayaok</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a><a class="contact-instagram contact-whatsapp" href="https://wa.me/543413201120?text=Hola%2C%20ListaYA.%20Quiero%20consultar%20por%20un%20cat%C3%A1logo%20web." target="_blank" rel="noopener noreferrer" aria-label="Consultar a ListaYA por WhatsApp (abre en una pestaña nueva)"><svg aria-hidden="true"><use href="#i-chat"/></svg><span>WhatsApp</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div></div>
+  <form id="contact-form"><div class="form-row"><label>Tu nombre<input name="name" required maxlength="80" autocomplete="name" placeholder="¿Cómo te llamás?"></label><label>Nombre del negocio<input name="business" required maxlength="100" autocomplete="organization" placeholder="Tu marca o comercio"></label></div><label>Qué vendés<input name="sector" required maxlength="120" placeholder="Contanos de tus productos"></label><label>Qué te gustaría resolver<textarea name="message" required maxlength="1500" rows="3" placeholder="Cantidad de productos, cómo los actualizás o qué necesitás…"></textarea></label><label>Me interesa<select name="plan" id="contact-plan"><option>Quiero que me orienten</option><option>Esencial — USD 20/mes</option><option>Profesional — USD 50/mes</option><option>Gestión Integral — USD 100/mes</option></select></label><button class="button" type="submit">Preparar mi consulta <svg><use href="#i-arrow"/></svg></button><p class="form-note">Podés revisar y copiar tu mensaje antes de compartirlo.</p></form>
+ </div></section>
+</main>
+<footer class="container footer"><a class="brand brand-logo" href="#inicio" aria-label="ListaYA, inicio"><img src="assets/listaya-logo.png" alt="ListaYA" width="1774" height="887"></a><p>Catálogos que muestran lo mejor de tu negocio.</p><a href="#contacto">Hablemos de tu catálogo <svg><use href="#i-arrow"/></svg></a><span>© <span id="year">2026</span> ListaYA</span></footer>
+<dialog id="demo-dialog" class="demo-dialog" aria-labelledby="demo-title"><div class="dialog-bar"><span class="eyebrow">PROBÁ EL CATÁLOGO</span><button class="icon-button" data-close="demo-dialog" aria-label="Cerrar ejemplo"><svg><use href="#i-close"/></svg></button></div><div class="demo-heading"><h2 id="demo-title">Alma Estudio</h2><p id="demo-subtitle"></p></div><div class="demo-toolbar"><label class="demo-search"><svg><use href="#i-search"/></svg><input id="demo-search" placeholder="Buscar productos" aria-label="Buscar productos del ejemplo"></label><div id="demo-filters" class="demo-filters" aria-label="Categorías del ejemplo"></div></div><div class="demo-layout"><div id="demo-products" class="demo-products"></div><aside class="demo-order"><h3>Tu pedido de ejemplo <span id="cart-count">0</span></h3><div id="cart-items"></div><div class="cart-total"><span>Total estimado</span><strong id="cart-total">$0</strong></div><button id="prepare-order" class="button" disabled>Preparar pedido <svg><use href="#i-chat"/></svg></button><p>Es una demostración. No se envían pedidos ni se realizan cobros.</p><div id="order-preview" hidden><label for="order-message">Así quedaría el mensaje</label><textarea id="order-message" rows="6" readonly></textarea><button class="text-button" id="copy-order">Copiar pedido <svg><use href="#i-arrow"/></svg></button></div></aside></div><p class="demo-disclaimer">Marcas ficticias · fotos ilustrativas · precios de muestra en pesos argentinos.</p><div class="sr-only" id="demo-status" role="status" aria-live="polite"></div></dialog>
+<dialog id="contact-dialog" class="contact-dialog" aria-labelledby="contact-dialog-title"><div class="dialog-bar"><span class="eyebrow">UN PASO MÁS CERCA</span><button class="icon-button" data-close="contact-dialog" aria-label="Cerrar consulta"><svg><use href="#i-close"/></svg></button></div><h2 id="contact-dialog-title">Tu consulta está lista.</h2><p>Revisá tu resumen y copialo para compartirlo. Todavía no se envió.</p><label class="sr-only" for="contact-summary">Resumen de la consulta</label><textarea id="contact-summary" readonly rows="10"></textarea><div class="contact-dialog-actions"><button class="button" id="copy-contact">Copiar consulta <svg><use href="#i-arrow"/></svg></button><button class="button secondary" id="download-contact">Guardar resumen</button></div><p id="contact-status" role="status" aria-live="polite"></p></dialog>
+</body>
+</html>
