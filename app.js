@@ -71,3 +71,34 @@ $('copy-contact').addEventListener('click',()=>copyText($('contact-summary').val
 $('download-contact').addEventListener('click',()=>{
  const blob=new Blob([$('contact-summary').value],{type:'text/plain;charset=utf-8'});const url=URL.createObjectURL(blob);const link=document.createElement('a');link.href=url;link.download='mi-consulta-listaya.txt';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);$('contact-status').textContent='Resumen preparado para descargar.';
 });
+
+// Subtle one-time entrances; content remains visible without animation support.
+(() => {
+ const preference = window.matchMedia('(prefers-reduced-motion: reduce)');
+ if (preference.matches || !('IntersectionObserver' in window) || !Element.prototype.animate) return;
+ const running = new Set();
+ const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+   if (!entry.isIntersecting) return;
+   observer.unobserve(entry.target);
+   if (preference.matches || entry.target.contains(document.activeElement)) return;
+   const siblings = Array.from(entry.target.parentElement.children);
+   const delay = Math.min(siblings.indexOf(entry.target), 2) * 80;
+   const animation = entry.target.animate([
+    { opacity: 0, transform: 'translateY(16px)' },
+    { opacity: 1, transform: 'translateY(0)' }
+   ], { duration: 460, delay, easing: 'cubic-bezier(0.22, 1, 0.36, 1)', fill: 'backwards' });
+   running.add(animation);
+   animation.onfinish = animation.oncancel = () => running.delete(animation);
+   entry.target.addEventListener('focusin', () => animation.cancel(), { once: true });
+  });
+ }, { threshold: 0.08 });
+ document.querySelectorAll('.plans-grid > .plan, .example-grid > .example-card, .steps > article').forEach(card => observer.observe(card));
+ preference.addEventListener('change', event => {
+  if (event.matches) {
+   observer.disconnect();
+   running.forEach(animation => animation.cancel());
+   running.clear();
+  }
+ });
+})();
