@@ -24,3 +24,15 @@ dialog{color:var(--ink);background:var(--bg);border:1px solid var(--line);border
 .plans-grid .plan-intro{min-height:0}
 .plan li:last-child{margin-bottom:0}
 .plan-footnote + .plan-footnote{margin-top:12px}
+
+/* Lightweight FAQ feedback, with native keyboard-accessible disclosure. */
+.faqs summary{transition:color .2s ease}
+.faqs summary:hover,.faqs details[open] summary{color:var(--green)}
+.faqs summary>span{transition:transform .2s ease}
+@media(prefers-reduced-motion:no-preference){
+ .faqs details[open]>p{animation:faq-answer-in .26s ease-out}
+}
+@keyframes faq-answer-in{
+ from{opacity:0;transform:translateY(5px)}
+ to{opacity:1;transform:translateY(0)}
+}
