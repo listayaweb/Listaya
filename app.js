@@ -93,7 +93,7 @@ $('download-contact').addEventListener('click',()=>{
    entry.target.addEventListener('focusin', () => animation.cancel(), { once: true });
   });
  }, { threshold: 0.08 });
- document.querySelectorAll('.plans-grid > .plan, .example-grid > .example-card, .steps > article').forEach(card => observer.observe(card));
+ document.querySelectorAll('.hero-copy, .hero-visual, .section-heading, .center-heading, .benefits-heading, .benefits-grid > article, .plans-grid > .plan, .example-grid > .example-card, .steps > article, .faq-section > div:first-child, .faqs > details, .contact-grid > div, .contact-grid > form').forEach(card => observer.observe(card));
  preference.addEventListener('change', event => {
   if (event.matches) {
    observer.disconnect();
